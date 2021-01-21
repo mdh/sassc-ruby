@@ -21,8 +21,8 @@ end
 
 # Set to false when building binary gems
 if enable_config('march-tune-native', true)
-  $CFLAGS << ' -march=native -mtune=native'
-  $CXXFLAGS << ' -march=native -mtune=native'
+  $CFLAGS << ' -mtune=native'
+  $CXXFLAGS << ' -mtune=native'
 end
 
 if enable_config('lto', true)
